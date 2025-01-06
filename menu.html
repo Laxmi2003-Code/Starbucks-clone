@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu page</title>
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.logo img{
+    height: 6rem;
+
+   
+}
+.navbar{
+    background-color: #7c573c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navlist{
+    display: flex;
+    gap: 2.5rem;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .08rem;
+}
+.navlist .slider{
+    background-color: rgba(255, 255, 255, 0.308);
+    width: 6rem;
+    height: 5rem;
+    position: absolute;
+    top:0;
+    right: 90px;
+    border-top: .3rem solid #2c1e1e;
+    border-radius: 0 0 25px 25px;
+    backdrop-filter: blur(.5rem);
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+.navlist li:nth-child(1):hover ~ .slider{
+    right: 320px;
+}
+.navlist li:nth-child(2):hover ~ .slider{
+    right: 205px;
+}
+.navlist li:nth-child(4):hover ~ .slider{
+    right:-10px;
+}
+.hero{
+display: flex;
+margin-top: 12vh;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.items{
+    width: 400px;
+    height: 500px;
+    flex-wrap: wrap;
+    background-color: rgba(176, 103, 14, 0.571);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid rgba(128, 128, 128, 0.988) 1px;
+    box-shadow: 0 0 5 10 grey;
+    text-align: center;
+
+}
+.Espresso{
+    height: 400px;
+    width: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.latte{
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mocha{
+    height: 400px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Cappuccino{
+    height: 400px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cold-brew{
+    height: 400px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tea{
+    height: 350px;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+        <img src="images/coffee logo.png">
+    </div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="slider"></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="hero">
+        
+            
+            <div class="items">
+                <h3>Espresso</h3>
+                <img src="./images/expresso.avif"alt="Espresso" class="Espresso"/>
+                <p>A strong and bold coffee shot.</p>
+                <span>$3.00</span>
+            </div>
+            <div class="items">
+                <h3>Latte</h3>
+                <img src="./images/latte.jpg"alt="latte" class="latte"/>
+                <p>Espresso with steamed milk and foam.</p>
+                <span>$3.60</span>
+            </div>
+            <div class="items">
+                <h3>Mocha</h3>
+                <img src="./images/mocha.jpg"alt="mocha" class="mocha"/>
+                <p>Espresso with chocolate and steamed milk.</p>
+                <span>$4.5.00</span>
+            </div>
+            <div class="items">
+                <h3>Cappuccino</h3>
+                <img src="./images/capechino.jpg"alt="Cappuccino" class="Cappuccino"/>
+                <p>Espresso with equal parts steamed milk and foam.</p>
+                <span>$5.00</span>
+            </div>
+            <div class="items">
+                <h3>Cold Brew</h3>
+                <img src="./images/cold-brew.jpg"alt="cold brew" class="cold-brew"/>
+                <p>Slow-steeped coffee served cold.</p>
+                <span>$3.80</span>
+            </div>
+            <div class="items">
+                <h3>Tea</h3>
+                <img src="./images/tea.jpg"alt="tea" class="tea"/>
+                <p>Choose from a variety of teas.</p>
+                <span>$2.70</span>
+            </div>
+        
+
+
+    </section>
+    
+</body>
+</html>
